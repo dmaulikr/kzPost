@@ -42,6 +42,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		196382E41EFD2A00000CD256 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		197B82D81EEE87DF003C0C11 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +70,7 @@
 		197B82E31EEE87DF003C0C11 /* kzPost */ = {
 			isa = PBXGroup;
 			children = (
+				196382E41EFD2A00000CD256 /* Model */,
 				19E70E6D1EF3D0120044A8BC /* MapViewController.swift */,
 				197B82E41EEE87DF003C0C11 /* AppDelegate.swift */,
 				197B82E61EEE87DF003C0C11 /* ViewController.swift */,

@@ -42,14 +42,14 @@
                                 <state key="normal" title="Find"/>
                                 <connections>
                                     <action selector="findBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GsX-Yx-1QE"/>
-                                    <segue destination="gIS-9i-faK" kind="show" identifier="Map" id="NED-ew-WkP"/>
+                                    <segue destination="gIS-9i-faK" kind="show" identifier="toMap" id="CYX-8x-dFn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7kh-FM-VqX">
                                 <rect key="frame" x="69" y="126" width="236" height="100"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="FUCKING INFO">
+                                        <fragment content="GET THE INFO">
                                             <attributes>
                                                 <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="26" name=".SFNSDisplay"/>
@@ -59,7 +59,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="getTheFuckingInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cm8-7u-2Of"/>
+                                    <action selector="getTheInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lCa-h3-nzN"/>
                                 </connections>
                             </button>
                         </subviews>
