@@ -12,6 +12,8 @@
 		197B82EA1EEE87DF003C0C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197B82E81EEE87DF003C0C11 /* Main.storyboard */; };
 		197B82EC1EEE87DF003C0C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197B82EB1EEE87DF003C0C11 /* Assets.xcassets */; };
 		197B82EF1EEE87DF003C0C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197B82ED1EEE87DF003C0C11 /* LaunchScreen.storyboard */; };
+		19E70E6E1EF3D0120044A8BC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E70E6D1EF3D0120044A8BC /* MapViewController.swift */; };
+		2A25C0DC9FD7E1330F3C8CA5 /* Pods_kzPost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABBB0B66E6AC313434E6F8E /* Pods_kzPost.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		197B82EB1EEE87DF003C0C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		197B82EE1EEE87DF003C0C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		197B82F01EEE87DF003C0C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19E70E6D1EF3D0120044A8BC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		6762D131067F20AAA68A978E /* Pods-kzPost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kzPost.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kzPost/Pods-kzPost.debug.xcconfig"; sourceTree = "<group>"; };
+		C5D57FCEAFED79F5201E8A3B /* Pods-kzPost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kzPost.release.xcconfig"; path = "Pods/Target Support Files/Pods-kzPost/Pods-kzPost.release.xcconfig"; sourceTree = "<group>"; };
+		DABBB0B66E6AC313434E6F8E /* Pods_kzPost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kzPost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A25C0DC9FD7E1330F3C8CA5 /* Pods_kzPost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				197B82E31EEE87DF003C0C11 /* kzPost */,
 				197B82E21EEE87DF003C0C11 /* Products */,
+				68D143D7D1ABD9675FEFED3E /* Pods */,
+				2A219E40731F30CE120F0BC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		197B82E31EEE87DF003C0C11 /* kzPost */ = {
 			isa = PBXGroup;
 			children = (
+				19E70E6D1EF3D0120044A8BC /* MapViewController.swift */,
 				197B82E41EEE87DF003C0C11 /* AppDelegate.swift */,
 				197B82E61EEE87DF003C0C11 /* ViewController.swift */,
 				197B82E81EEE87DF003C0C11 /* Main.storyboard */,
@@ -64,6 +74,23 @@
 			path = kzPost;
 			sourceTree = "<group>";
 		};
+		2A219E40731F30CE120F0BC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DABBB0B66E6AC313434E6F8E /* Pods_kzPost.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68D143D7D1ABD9675FEFED3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6762D131067F20AAA68A978E /* Pods-kzPost.debug.xcconfig */,
+				C5D57FCEAFED79F5201E8A3B /* Pods-kzPost.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 197B82F31EEE87DF003C0C11 /* Build configuration list for PBXNativeTarget "kzPost" */;
 			buildPhases = (
+				1C147D9A7C87CFF31C5A0DAE /* [CP] Check Pods Manifest.lock */,
 				197B82DD1EEE87DF003C0C11 /* Sources */,
 				197B82DE1EEE87DF003C0C11 /* Frameworks */,
 				197B82DF1EEE87DF003C0C11 /* Resources */,
+				C2CB1DD9751BEFC9FE8B42F3 /* [CP] Embed Pods Frameworks */,
+				4C10AAC7367893DA5451D279 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -98,6 +128,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2ZXG42P8KB;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -132,12 +167,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C147D9A7C87CFF31C5A0DAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4C10AAC7367893DA5451D279 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kzPost/Pods-kzPost-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2CB1DD9751BEFC9FE8B42F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kzPost/Pods-kzPost-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		197B82DD1EEE87DF003C0C11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				197B82E71EEE87DF003C0C11 /* ViewController.swift in Sources */,
+				19E70E6E1EF3D0120044A8BC /* MapViewController.swift in Sources */,
 				197B82E51EEE87DF003C0C11 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +345,7 @@
 		};
 		197B82F41EEE87DF003C0C11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6762D131067F20AAA68A978E /* Pods-kzPost.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2ZXG42P8KB;
@@ -274,6 +359,7 @@
 		};
 		197B82F51EEE87DF003C0C11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5D57FCEAFED79F5201E8A3B /* Pods-kzPost.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2ZXG42P8KB;
@@ -304,6 +390,7 @@
 				197B82F51EEE87DF003C0C11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
-   version = "1.7">
+   LastUpgradeVersion = "0700"
+   version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "197B82E01EEE87DF003C0C11"
-               BuildableName = "kzPost.app"
-               BlueprintName = "kzPost"
-               ReferencedContainer = "container:kzPost.xcodeproj">
+               BlueprintIdentifier = "6B8F18B483421A6F9F9884CDBF56499F"
+               BuildableName = "Pods_kzPost.framework"
+               BlueprintName = "Pods-kzPost"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "197B82E01EEE87DF003C0C11"
-            BuildableName = "kzPost.app"
-            BlueprintName = "kzPost"
-            ReferencedContainer = "container:kzPost.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,35 +42,17 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "197B82E01EEE87DF003C0C11"
-            BuildableName = "kzPost.app"
-            BlueprintName = "kzPost"
-            ReferencedContainer = "container:kzPost.xcodeproj">
+            BlueprintIdentifier = "6B8F18B483421A6F9F9884CDBF56499F"
+            BuildableName = "Pods_kzPost.framework"
+            BlueprintName = "Pods-kzPost"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "-com.apple.CoreData.ConcurrenctDebug 1"
-            isEnabled = "YES">
-         </CommandLineArgument>
-      </CommandLineArguments>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACITIVTY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
-      <LocationScenarioReference
-         identifier = "New York, NY, USA"
-         referenceType = "1">
-      </LocationScenarioReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -87,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "197B82E01EEE87DF003C0C11"
-            BuildableName = "kzPost.app"
-            BlueprintName = "kzPost"
-            ReferencedContainer = "container:kzPost.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
