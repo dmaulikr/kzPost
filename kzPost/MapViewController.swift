@@ -83,7 +83,15 @@ class MapViewController: ViewController, MKMapViewDelegate, CLLocationManagerDel
 //                    print("self.coord in getCoord(func): ", self.coord)
                     self.activityIndicator.stopAnimating()
                     let geodesicPolyline = MKGeodesicPolyline(coordinates: self.coord, count: self.coord.count)
+                    
                     self.map.add(geodesicPolyline)
+                    
+                    // MARK: Adding annotations
+                    let annotation1 = Annotation(annTitle: "1 ann", locationName: "1 locName", coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lng))
+                    
+                
+                    self.map.addAnnotation(annotation1)
+                    
                 }
             case .failure(let error):
                 print(error)
@@ -91,6 +99,7 @@ class MapViewController: ViewController, MKMapViewDelegate, CLLocationManagerDel
         })
     }
 
+    
     
     // MARK: Rendering the map
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -101,4 +110,24 @@ class MapViewController: ViewController, MKMapViewDelegate, CLLocationManagerDel
         
         return renderer
     }
+}
+
+class Annotation: NSObject, MKAnnotation {
+    
+    let annTitle: String
+    let locationName: String
+    let coordinate: CLLocationCoordinate2D
+    
+    init(annTitle: String, locationName: String, coordinate: CLLocationCoordinate2D) {
+        self.annTitle = annTitle
+        self.locationName = locationName
+        self.coordinate = coordinate
+        
+        super.init()
+    }
+    
+    var annSubtitle: String {
+        return locationName
+    }
+    
 }
